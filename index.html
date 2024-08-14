@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogSphere</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BlogSphere</h1>
+      <nav>
+        <ul>
+          <li><a href="#create-post">Create Post</a></li>
+          <li><a href="#posts">View Posts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="create-post">
+      <h2>Create a New Blog Post</h2>
+      <form id="post-form">
+        <input type="text" id="title" placeholder="Post Title" required />
+        <textarea
+          id="content"
+          placeholder="Write your post here..."
+          required
+        ></textarea>
+        <button type="submit">Publish</button>
+      </form>
+    </section>
+
+    <section id="posts">
+      <h2>Blog Posts</h2>
+      <div id="post-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
